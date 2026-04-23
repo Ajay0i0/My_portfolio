@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay | Web Developer Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+
+
+
+
+
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+
+    .navbar {
+    transition: top 0.9s; /* smooth animation */
+    }
+
+
+    .profile-img {
+  width: 172px;          /* set the circle size */
+  height: 172px;         /* same as width for perfect circle */
+  border-radius: 50%;    /* makes it circular */
+  object-fit: cover;     /* crops and scales image to fit */
+}
+
+    nav {
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.4);
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin: 20px auto;
+      background: url('your-photo.jpg') center/cover no-repeat;
+    }
+
+
+
+  #skills img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  }
+    /* Hover effect for skill logos */
+  #skills img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  #skills img:hover {
+  transform: scale(1.2);       /* Slight zoom */
+  filter: drop-shadow(0 0 8px rgba(0, 123, 255, 0.6)); /* Glow effect */
+  }
+  #skills img{
+  margin-top: 80px; /* adjust as needed */
+  }
+    
+
+
+
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    #skills .d-flex {
+    overflow-x: auto;
+    }
+    #skills .card {
+    flex: 0 0 auto; /* prevents shrinking */
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">  <spam style="color: red;">P</spam>ortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+  <!-- Hero Section -->
+<section class="hero">
+  <div>
+    <div class="profile-pic"><img  class="profile-img" src="portfolio_img.jpeg" alt="Profile Picture"></a></div>
+    <h1>Hello, I'm Ajay</h1>
+    <p>A passionate Web Developer based In Uttar Pradesh, India. and working with a full-stack team</p>
+    
+  </div>
+</section>
+
+
+
+<!-- About Me Section -->
+<section id="about" class="container py-5">
+  <h2 class="text-center mb-4">About Me</h2>
+  <div class="card p-4 text-center" data-aos="fade-up">
+    <h4 class="fw-bold">Web Developer</h4>
+    <p>
+      I'm a passionate Web Developer, and I am incredibly committed to my work. 
+      Over the course of four years as a professional web developer, I have gained 
+      the required skills and knowledge to help you with your project.
+    </p>
+    <p>
+      I am focused on <span class="text-info fw-bold">frontended technologies</span> which bring a lot of benefits to my clients:
+    </p>
+    <ul class="list-unstyled mt-3">
+      <li>👍 Technology is supported by LinkedIn.</li>
+      <li>👍 A lot of third-party plugins and components.</li>
+      <li>👍 Also knowledge of Database conectivity by using Mysql, MongoDB.</li>
+      <li>👍 Very good performance compared with other cross-platform frameworks.</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="container py-5">
+    <h2 class="text-center mb-4">My Skills</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Frontend Development</h5>
+          <p>HTML, CSS, JavaScript, Bootstrap</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Programming Languages</h5>
+          <p>Python, C, Java</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Trending Features</h5>
+          <p>Responsive Design, Animations, Glassmorphism</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <!-- Skills with Logos Section -->
+  <h2 class="mb-4 text-center"></h2>
+  <div class="row text-center">
+    <!-- HTML -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="html.png" alt="HTML" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">HTML</p>
+    </div>
+    <!-- CSS -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="css.png" alt="CSS" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">CSS</p>
+    </div>
+    <!-- JavaScript -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="js.png" alt="JavaScript" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">JavaScript</p>
+    </div>
+    <!-- Bootstrap -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="bootstrap.png" alt="Bootstrap" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">Bootstrap</p>
+    </div>
+    <!-- Bootstrap -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="mysql.png" alt="Bootstrap" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">MySql</p>
+    </div>
+    <!-- Python -->
+    <div class="col-md-2 col-4 mb-4">
+      <img style="margin-bottom: 30px;padding-top: 10px;" src="py.png" alt="Python" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">Python</p>
+    </div>
+    <!-- Java -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="java.png" alt="Java" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">Java</p>
+    </div>
+    <!-- C -->
+    <div class="col-md-2 col-4 mb-4">
+      <img src="c.png" alt="C" class="img-fluid" style="max-height:80px;">
+      <p class="mt-2">C</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Your project cards go here -->
+  <section id="projects" class="container my-5">
+</section>
+
+  <section id="projects" class="container my-5">
+  <h2 class="mb-4 text-center">My Projects</h2>
+  <div class="row">
+    <!-- Myntra Clone -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Myntra Clone</h5>
+          <p class="card-text">
+            A responsive e-commerce front-end built with HTML+CSS+Javascript. 
+            Features product listings, filters, and a modern UI that mimics real-world shopping experiences.
+            This project demonstrates my ability to replicate complex layouts and ensure mobile responsiveness.
+          </p>
+          <a href="https://ajay0i0.github.io/myntra_clone/" target="_blank" class="btn btn-primary">
+            View Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- To-Do App -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">To-Do App</h5>
+          <p class="card-text">
+            A simple, interactive task manager using JavaScript. 
+            Users can add, edit, and delete tasks with a clean interface. 
+            This project highlights my skills in DOM manipulation and creating user-friendly workflows.
+          </p>
+          <a href="https://ajay0i0.github.io/to_do_list/" target="_blank" class="btn btn-primary">
+            View Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Website -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Portfolio Website</h5>
+          <p class="card-text">
+            A showcase of my web development journey. 
+            Built with Bootstrap, modern fonts, and interactive features, this site reflects my design sense and coding expertise. 
+            It’s continuously updated with new projects and event highlights.
+            Showcasing Bootstrap layouts, modern fonts, and interactive features.
+          </p>
+          <a href="https://ajayportfolio.github.io" target="_blank" class="btn btn-primary">
+            View Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://www.linkedin.com/in/ajay-kumar-0aa07b20a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-outline-light">LinkedIn</a>
+      <a href="https://github.com/Ajay0i0" target="_blank" class="btn btn-outline-light">GitHub</a>
+      <a href="https://www.youtube.com/@editskaadda" target="_blank" class="btn btn-outline-light">Youtube</a>
+      <a href="https://www.google.com/maps/@26.848692,80.9425127,10z?entry=ttu&g_ep=EgoyMDI2MDQyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-light">Location</a>
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Ajay | Web Developer | Portfolio</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional: Add AOS for scroll animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("mainNav");
+
+// navbar (apper/disapper)
+
+window.addEventListener("scroll", function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos < currentScrollPos) {
+    // scrolling down → hide navbar
+    navbar.style.top = "-80px"; // adjust to your navbar height
+  } else {
+    // scrolling up → show navbar
+    navbar.style.top = "0";
+  }
+  prevScrollPos = currentScrollPos;
+});
+</script>
+</body>
+</html>
+
+
